@@ -1,0 +1,267 @@
+.flexMode {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+
+    background: url(../img/background3.png);
+    background-size: 100%;
+    background-position: 40%;
+
+
+    h1 {
+        font-family: 'beaufort', serif;
+        font-weight: bold;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #fff;
+        font-style: italic;
+    }
+
+    p {
+        font-family: 'spiegel', serif;
+        color: #fff;
+    }
+
+
+}
+
+#inicial {
+
+    height: 80vh;
+
+    h1 {
+        margin-bottom: 3vw;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+#tedio {
+    margin-top: 6vw;
+
+    h1 {
+
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+
+    a {
+
+        img {
+            width: 180px;
+            display: block;
+            margin: 0 auto 4vw auto;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+#bonecos {
+    margin-top: 10vw;
+
+    h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 4vw;
+        width: 100%;
+    }
+
+    .row-bonecos {
+        margin-bottom: 3vw;
+
+        .role,
+        .personagem,
+        h1 {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 3vw;
+        }
+
+        .role {
+            width: 3vw;
+            margin: 0 auto;
+        }
+
+        .corte {
+            width: 13vw;
+            height: 13vw;
+            background-position: center !important;
+            background-size: 50vw !important;
+            border-radius: 100%;
+            margin-bottom: 3vw;
+            transition: 0.5s;
+
+            &:hover {
+                background-size: 55vw !important;
+            }
+
+
+        }
+
+        #lillia {
+            background-position: 45% 10% !important;
+        }
+
+        #ashe {
+            background-position: 70% 20% !important;
+        }
+
+        .personagem {
+            width: 13vw;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+
+}
+
+#fechar {
+    margin-top: 10vw;
+    padding-bottom: 5vw;
+
+    h1 {
+        margin-bottom: 4vw;
+    }
+
+    .botao-discord {
+        margin-top: 4vw;
+        // background-color: #5865f2;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 1vw 0px;
+        width: 30%;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            // background-color: #fff;
+            background-color: #5865f2;
+            border: 2px solid #fff;
+            color: #fff;
+            width: 33%;
+        }
+
+        i {
+            margin-right: 1vw;
+        }
+    }
+
+    .perfis {
+        position: relative;
+
+        img {
+            width: 10vw;
+            margin: 0 auto;
+            display: block;
+        }
+
+        i {
+            color: #fff;
+            font-size: 3rem;
+            padding: 1vw;
+            transition: 0.1s;
+
+            &:hover {
+                font-size: 4rem;
+            }
+
+        }
+
+        .col-md-3 {
+            text-align: center;
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    main{
+        background-size: cover;
+    }
+    section {
+        padding: 0px 10px;
+    }
+
+    #inicial {
+        text-align: center;
+        height: 100vh;
+
+        h1,
+        p {
+            margin-bottom: 15vw;
+        }
+    }
+
+    #tedio {
+        text-align: center;
+
+        a {
+            img {
+                margin: 15vw auto 0vw auto;
+            }
+        }
+    }
+
+    #bonecos {
+        margin-top: 30vw;
+
+        .row-bonecos {
+            .col-md-4 {
+                margin-top: 10vw;
+            }
+
+            .role {
+                width: 10vw;
+            }
+
+            .corte {
+                width: 30vw;
+                height: 30vw;
+                background-size: 130vw !important;
+
+                &:hover {
+                    background-size: 140vw !important;
+                }
+            }
+        }
+    }
+
+    #fechar {
+        margin-top: 30vw;
+        text-align: center;
+
+       .botao-discord{
+        width: 100%;
+        margin: 15vw 0vw;
+        padding: 4vw 0vw;
+
+       }
+
+       .perfis{i{
+        padding: 6vw;}
+       }
+    }
+}

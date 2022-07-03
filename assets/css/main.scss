@@ -198,9 +198,10 @@ main {
 }
 
 @media (max-width: 600px) {
-    main{
+    main {
         background-size: cover;
     }
+
     section {
         padding: 0px 10px;
     }
@@ -252,16 +253,20 @@ main {
     #fechar {
         margin-top: 30vw;
         text-align: center;
+        padding-bottom: 80vw;
 
-       .botao-discord{
-        width: 100%;
-        margin: 15vw 0vw;
-        padding: 4vw 0vw;
+        .botao-discord {
+            width: 100%;
+            margin: 15vw 0vw;
+            padding: 4vw 0vw;
 
-       }
+        }
 
-       .perfis{i{
-        padding: 6vw;}
-       }
+        .perfis {
+            i {
+                padding: 5vw;
+               
+            }
+        }
     }
 }
